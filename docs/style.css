@@ -10,6 +10,8 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #333;
   background: linear-gradient(70deg, #fff 0%, #fff 69.9%, #2b8a45 70%, #2b8a45 100%);
 }
 
@@ -33,4 +35,10 @@ body {
   border-radius: 5px;
   display: inline-block;
   margin-bottom: 10px;
+}
+
+.links {
+  margin-top: 15px;
+  padding: 15px 30px;
+  border-top: 1px solid #ccc;
 }
