@@ -1,3 +1,9 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
 html,
 body {
     width: 100%;
@@ -9,10 +15,14 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     color: #333;
     background: linear-gradient(70deg, #fff 0%, #fff 69.9%, #2b8a45 70%, #2b8a45 100%);
+}
+
+a {
+    color: #2b8a45;
 }
 
 .icon {
@@ -22,23 +32,46 @@ body {
     overflow: hidden;
 }
 
-.heading {
-    font-family: 'Times New Roman', Times, serif;
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 260px;
+    margin: 30px auto;
+}
+
+dl > * {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+}
+
+dt {
+    justify-content: flex-end;
+    width: 100px;
+}
+
+dt::after {
+    content: ':';
+}
+
+dd {
+    padding-left: 10px;
+    width: calc(100% - 100px);
 }
 
 .account-btn {
     padding: 5px 15px;
-    border: 1px solid #394;
+    border: 1px solid #2b8a45;
     background-color: #fff;
-    color: #394;
+    color: #2b8a45;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-bottom: 10px;
 }
 
 .links {
+    max-width: 300px;
     margin-top: 15px;
     padding: 15px 30px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #2b8a45;
 }
