@@ -4,10 +4,19 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     margin: 0;
     padding: 0;
+}
+
+body {
     min-height: 100vh;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     color: #333;
@@ -19,10 +28,8 @@ a {
 }
 
 .container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    min-width: 320px;
+    margin: 0 auto;
     text-align: center;
 }
 
